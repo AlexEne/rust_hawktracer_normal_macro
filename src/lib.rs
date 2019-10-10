@@ -1,7 +1,13 @@
 #[allow(dead_code)]
+#[cfg(feature = "profiling_enabled")]
 extern crate rust_hawktracer_sys;
-
+#[cfg(feature = "profiling_enabled")]
 pub use rust_hawktracer_sys::*;
+
+#[cfg(not(feature = "profiling_enabled"))]
+mod dummy_structs;
+#[cfg(not(feature = "profiling_enabled"))]
+pub use dummy_structs::*;
 
 #[macro_export]
 #[cfg(feature = "profiling_enabled")]
@@ -20,3 +26,4 @@ macro_rules! scoped_tracepoint {
         ()
     };
 }
+
