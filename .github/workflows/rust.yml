@@ -46,7 +46,7 @@ jobs:
     runs-on: windows-2016
     strategy:
       matrix:
-        features: ["", "--features=generate_bindings", "--features=profiling_enabled", "--features=profiling_enabled,generate_bindings"]
+        features: ["", "--features=profiling_enabled"]
     
     steps:
     - uses: actions/checkout@v1
