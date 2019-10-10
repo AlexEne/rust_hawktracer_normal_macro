@@ -1,6 +1,8 @@
 #[allow(dead_code)]
 extern crate rust_hawktracer_sys;
 
+pub use rust_hawktracer_sys::*;
+
 #[macro_export]
 #[cfg(feature = "profiling_enabled")]
 macro_rules! scoped_tracepoint {
