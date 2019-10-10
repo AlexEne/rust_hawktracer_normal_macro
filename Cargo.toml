@@ -13,5 +13,4 @@ generate_bindings=["rust_hawktracer_sys", "rust_hawktracer_sys/generate_bindings
 
 [dependencies.rust_hawktracer_sys]
 version = "0.1"
-path = "../rust_hawktracer_sys"
 optional=true
