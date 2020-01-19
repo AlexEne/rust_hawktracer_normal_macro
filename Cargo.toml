@@ -1,6 +1,6 @@
 [package]
 name = "rust_hawktracer_normal_macro"
-version = "0.3.0"
+version = "0.4.0"
 authors = ["Alexandru <alex.ene0x11@gmail.com>"]
 edition = "2018"
 description = "helper crate for hawktracer profiling library."
@@ -13,5 +13,5 @@ profiling_enabled = ["rust_hawktracer_sys"]
 generate_bindings=["rust_hawktracer_sys", "rust_hawktracer_sys/generate_bindings"]
 
 [dependencies.rust_hawktracer_sys]
-version = "0.3"
+version = "0.4"
 optional=true
